@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Allotments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form-box
+        {
+            width:350px;
+            height:28rem;
+            background-color:white;
+           box-shadow:0 10px 20px rgb(7, 68, 105);
+            left:50%;
+            top:50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            color:black;
+            padding: 70px 30px;
+            border: 2px solid black;
+        }
+        .logo
+        {
+            width:120px;
+            height:120px;
+            position: absolute;
+            top:-60px;
+            left:calc(50% - 60px)
+        }
+        h1{
+            margin:0;
+            padding: 0 0 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+        .form-box p{
+            margin:0;
+            padding:0;
+            font-weight: bold;
+            margin-bottom:17px;
+        }
+        .form-box input{
+            width:100%;
+            margin-bottom:20px;
+        }
+         .form-box input[type="text"],input[type="password"] 
+        {
+            border: none;
+            background-color:transparent;
+            outline: none;
+             border-bottom: 2px solid black;
+             color:black;
+             font-size: 16px;
+
+        }
+         .form-box input[type="submit"]
+        {
+            border:none;
+            outline:none;
+            height:50px;
+            background-color: rgb(7, 68, 105) ;
+             color:white;
+            font-size: 18px;
+            font-weight:bold; 
+        } 
+        .submit{
+            padding-bottom: 30px;
+        }
+        .Form{
+  
+  display: flex;
+  justify-content: center;
+  left: 150%;
+  top:50%;
+  margin-top: 150px;
+  font-size: 25px;
+  color: honeydew;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background: #0c192c;
+}
+.container{
+background: #000;
+height: 100vh;
+overflow: hidden;  
+}
+.content h1{
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left:50%;
+  font-family: azonix;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  font-size: 80px;
+  text-align: center;
+}
+.box ul li{
+  position: absolute;
+  width: 35px;
+  height:35px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(deepskyblue,transparent,transparent);
+  bottom:0;
+  left:10vw;
+  animation:animate 15s linear infinite;
+}
+.box ul li:nth-child(2){
+  left: 37vw;
+  animation-delay: 2s;
+}
+.box ul li:nth-child(3){
+  left: 25vw;
+  animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+  left: 60vw;
+  animation-delay: 6s;
+}
+.box ul li:nth-child(5){
+  left: 75vw;
+  animation-delay: 4s;
+}
+@keyframes animate{
+  0%{
+      transform: scale(0);
+      opacity: 1;
+      bottom:0;
+  }
+  100%{
+      transform:scale(10);
+      opacity: 0;
+      bottom:100vh;
+  }
+}
+.item1{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+   align-content: center;
+   color: #fff;
+}
+.logo
+        {
+            width:120px;
+            height:120px;
+            position: absolute;
+            top:-60px;
+            left:calc(50% - 60px)
+        }
+.submit{
+    text-align: center;
+} 
+.button{
+    background-color: azure;
+ margin: auto;
+ padding: 10px 170px 15px 30px; 
+ text-align: center;
+ display:table-cell;
+vertical-align:middle;
+font-weight: bold;
+font-size: 1.5em;
+line-height: 10px; 
+display: inline-block;
+}      
+    </style>
+    
+</head>
+
+<body>
+    <div>
+        <a href="home.html" style=" background-color: #64ccec;
+            padding: 14px 25px;
+            color:rgb(39, 38, 37);
+            text-align: center;
+            text-decoration: none;
+            border-radius: 15px;
+            display: inline-block;">HOME</a>
+     </div>
+    <div class="content">
+      <form onsubmit="return validate()">
+        <div class="form-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqE5w5oSzJ5hkVXlqk9GW5aC--Jc97eU5bA&usqp=CAU" alt="" class="logo">
+            
+            <p>Name</p>
+            <input type="text"  placeholder="username" title="j khk" id="Name" required>
+            <p>Email</p>
+            <input type="email" name="EmailID" id="email"  placeholder="abcd@gmail.com" />
+            <p>Password</p>
+            <input type="password" placeholder="Password" id="password" required>
+            <p>Gender</p>
+            <select name="gender" id="gender">
+                <option value="gender">gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <p>Mobile Number</p>
+            <input type="text" name="MobileNumber" id="PhoneNumber"  placeholder="9908******" />
+           
+
+        
+    <button class="button">Login</button>
+    <div>
+     </div>
+        </div> 
+    
+      </form>
+
+
+
+    </div>
+      <div class="box">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+        <script>
+            let Name=document.getElementById("Name");
+            let email=document.getElementById("email");
+
+            let password=document.getElementById("password");
+            let gender=document.getElementById("gender")
+           
+        </script>
+   
+  
+</body>
+
+</html>

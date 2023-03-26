@@ -1,0 +1,112 @@
+
+<html lang="en">
+<head>
+  <meta name="description" content="Daily Water Calculator">
+  <meta name="keywords" content="Water Calculator, Water Consumption, Proper Hydration">
+  <meta charset="utf-8">
+	<title>Water Consumption Calculator</title>
+		<style>
+@media(min-width: 768px) {	
+  .container-1 {
+    display: flex; 
+    flex-direction: column;
+}
+  .container-2 {
+    display: flex; 
+    flex-direction: row;
+  }
+}
+body {
+  background-image: url("https://img.freepik.com/free-photo/fresh-water-texture-background-transparent-liquid_53876-142909.jpg?size=626&ext=jpg&ga=GA1.2.1186758288.1667105973&semt=sph");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(15, 14, 14);
+}
+.box-1 {
+  flex: 2; 
+}
+.box-2 {
+  flex: 2; 
+}
+.box-3 {
+  flex: 1;
+}
+h1, legend {
+  margin-left: 10px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+p#first, p#second {
+  max-width: 575px;
+  letter-spacing: 4px;
+  margin-left: 30px;
+}
+p, label {
+  font-size: 20px;
+  line-height: 25px
+}
+legend {
+  font-size: 25px;
+  margin-left: 0;
+  letter-spacing: 4px;
+  font-weight: 600;
+}	
+button#calculate, button#clear {
+  background-color: rgb(153, 220, 243);
+  font-size: 16px;
+}
+button#calculate {
+  margin: 10px 0 7px 0;
+}
+button#clear {
+  margin-left: 10px;
+}
+fieldset {
+  max-width: 390px;
+  height: 350px;
+  margin-left: 500px;
+  padding-left: 20px;
+  background-color: rgb(238, 244, 246);
+}
+label, input {
+  margin-bottom: 10px
+}
+.emphasis {
+  font-style: italic;				
+}
+</style>
+</head>
+<body>
+	<div class="container-1">
+	<div class="box-1">
+        <a href="home.html" style=" background-color: #64ccec;
+        padding: 14px 25px;
+        color:rgb(39, 38, 37);
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15px;
+        display: inline-block;">HOME</a>
+  	<h1>Water Consumption Calculator</h1>
+   
+	<div class="container 2">
+	  <div class="box-3">
+    <form id="personal_info" onsubmit="return false">
+    <fieldset>
+    <legend>Personal Information</legend>
+    <label for="weight">Please enter your weight:</label><br>
+    <input type="text" id="weight" size="3" maxlength="5"><br>
+    <label for="exercise">How long do you exercise per day (minutes)?</label><br>
+    <input type="text" id="exercise" size="3" maxlength="5"><br>
+    <button id="calculate" onClick="calculateWater();">Calculate Water</button>
+    <button id="clear" onclick="resetForm();">Clear Calculator</button><br>
+    <label for="required_water">Required daily amount in ounces:</label><br>
+    <input type="text" id="required_water" size="3" maxlength="5"><br>
+    <label for="water_bottles">Number of 16.9 ounce water bottles needed:</label><br>
+    <input type="text" id="water_bottles" size="3" maxlength="5">
+    </fieldset>
+    </form>
+	</div>
+    </div>
+    <script type="text/javascript" src="Water.js"></script>
+</body>
+</html>

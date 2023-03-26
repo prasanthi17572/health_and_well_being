@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Century Gothic;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(232, 226, 226, 0.8),rgba(0,0,0,0.6)),url(https://medcitynews.com/uploads/2021/10/GettyImages-1273886962.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+ul{
+    
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+
+ul li{
+    display: inline-block;
+   
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+    padding: 5px 20px;
+    
+}
+ul li a:hover{
+    
+    text-decoration: underline;
+    color: rgb(122, 194, 230);
+}
+div h2{
+    color:black;
+    margin-top: 15px;
+    margin-left: 385px;
+    
+}
+div h1{
+    margin-top: 150px;
+    margin-left: 380px;
+    font-size: 50px;
+}
+div h3{
+    font-size:  30px;
+    margin-top: 15px;
+}
+.head{
+    display: flex;
+}
+.yes{
+    margin-left: 450px;
+    font-size:10px ;
+}
+div a{
+    color:black;
+    text-decoration: none;
+}
+div a:hover{
+    color: rgb(101, 200, 236);
+    text-decoration: underline;
+}
+.box1{
+    color:white;
+    position: absolute;
+    bottom: 143px;
+    left: 28%;
+    border: 1px solid  rgb(14, 16, 14);
+    padding: 10px 30px 15px 30px;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-size:20px;
+    margin-right: 50px;
+    
+}
+.box2{
+
+    color: white;
+    position:absolute;
+    bottom: 143px;
+    left: 52%;
+    border: 1px solid rgb(27, 28, 27);
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-size:20px;
+    margin-left: 50px;
+}
+
+
+.dropbtn {
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(17, 18, 18);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(246, 238, 238);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover
+  {background-color: #ebf2f4}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #83c7ec;
+  }

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="vishnulogo.png" />
+    <title>Doctor Consultation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif ;
+        /* box-sizing: border-box; */
+}
+#toggle{
+    position: fixed;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    background: #03a9f4;
+    cursor: pointer;
+}
+section{
+ display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height:60vh;
+    /* background: linear-gradient(45deg,#fdba61,#ff5acd); */
+} 
+.cards{
+    position:relative;
+    width:900px;
+    height:270px;
+    background:#fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
+    background: linear-gradient(45deg,#65ef85,#5ae1ff);
+    transition: 0.5s;
+}
+.cards:hover{
+    height: 300px;
+}
+.imgBox{
+    position: absolute;
+    left:50%;
+    top:-50px;
+    transform:translateX(-50%);
+    width:150px;
+    height:100px;
+    background:#fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+
+    
+
+}
+
+.imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:20vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.cards .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.cards .content .details{
+    padding:40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+
+}
+ .cards:hover .content .details{
+    transform: translateY(0px);
+} 
+.cards .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.cards .content .details .data h3{
+    font-size: 0.6em;
+    color: #555;
+    line-height: 2em;
+    font-weight: 600;
+}
+.cards .content .details .data h3 span{
+ font-size: 0.85em;
+ font-weight: 400;
+ opacity: 0.5;
+
+}
+.cards .content .details .ActionBtn button{
+    padding:10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5acd;
+    color: #fff;
+    cursor: pointer;
+}
+.cards .content .details .ActionBtn button:nth-child(2){
+    border: 1px solid #999;
+    color: #999;
+    background: #fff;
+}
+#card
+{
+    margin-right:5%;
+}
+
+.section
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 20px;;
+}
+
+</style>
+
+<body>
+    <div>
+        <a href="home.html" style="  background:  #6db9f0;
+            padding: 10px 20px;
+            color:rgb(251, 247, 243);
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;">HOME</a>
+     </div>
+    
+  
+     <br><br>
+        
+    <section style="text-align:center ;">
+        <div class="cards" id="card">
+            <div class="imgBox">
+             <img src="https://img.freepik.com/free-photo/i-show-you-how-it-work_329181-7679.jpg?size=626&ext=jpg&ga=GA1.1.874931164.1668093138&semt=ais" alt="">
+            </div>
+            <div class="content">
+             <div class="details">
+                <h2>Pediatrics</h2>
+                 <div class="data">
+                    <h3>Name<br> <span>Dr.G.Chaitanya</span></h3>
+                     <h3> Days<br> <span>Monday,Thursday</span></h3>
+                     <h3> Time <br><span>9:00am to 2:00pm</span></h3>
+     
+      
+                 </div>
+                 <div class="ActionBtn">
+                    <div>
+                        <a href="fill_doctor_form.html" style="  background: #6db9f0;;
+                            padding: 10px 20px;
+                            color:rgb(251, 247, 243);
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            display: inline-block;">Consult Doctor</a>
+                     </div>
+                </div>
+             </div> 
+     
+            </div>
+         </div>
+        <div class="cards" id="card">
+            <div class="imgBox">
+             <img src="https://img.freepik.com/free-photo/doctor-holding-heart-white-coat-with-stethoscope-looking-positive_176474-8495.jpg?size=626&ext=jpg&ga=GA1.2.874931164.1668093138&semt=ais"/ >
+            </div>
+            <div class="content">
+             <div class="details">
+                 <h2>Cardiologists</h2>
+                 <div class="data">
+                     <h3>Name<br> <span>Dr.G.Chaitanya</span></h3>
+                     <h3> Days<br> <span>Monday,Thursday</span></h3>
+                     <h3> Time <br><span>9:00am to 2:00pm</span></h3>
+     
+      
+                 </div>
+                 <div class="ActionBtn">
+                    <div>
+                        <a href="fill_details.html" style="  background: #6db9f0;
+                             padding: 10px 20px;
+                            color:rgb(251, 247, 243);
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            display: inline-block;">Consult Doctor</a>
+                     </div>
+                </div>
+             </div> 
+     
+            </div>
+         </div>
+         <div class="cards" id="card">
+            <div class="imgBox">
+                <img src="https://img.freepik.com/free-photo/gynecologist-talking-with-young-female-patient-during-medical-consultation-modern-clinic-patient-with-gynecologist-during-consultation-gynecological-office_657921-141.jpg?size=626&ext=jpg&ga=GA1.1.874931164.1668093138&semt=ais" alt=""></div>
+            <div class="content">
+             <div class="details">
+                 <h2>Gynecologists</h2>
+                 <div class="data">
+                     
+                    <h3>Name<br> <span>Dr.G.Chaitanya</span></h3>
+                    <h3> Days<br> <span>Monday,Thursday</span></h3>
+                    <h3> Time <br><span>9:00am to 2:00pm</span></h3>
+      
+                 </div>
+                 <div class="ActionBtn">
+                    <div>
+                        <a href="fill_details.html" style="  background: #6db9f0;
+                             padding: 10px 20px;
+                            color:rgb(251, 247, 243);
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            display: inline-block;">Consult Doctor</a>
+                     </div>
+                </div>
+             </div> 
+     
+            </div>
+         </div>
+        
+ 
+    </section>
+   
+    <br><br>
+       <!-- <br><br> -->
+   <section style="text-align:center ;">
+       <div class="cards" id="card">
+           <div class="imgBox">
+            <!-- <img src="https://a.hwstatic.com/image/upload/f_auto,q_auto/v1/propertyimages/1/11398/q3hq1lh9tepnvlxy05vg" alt=""> -->
+           <img src="https://img.freepik.com/premium-photo/pointing-side_1187-354594.jpg?size=626&ext=jpg&ga=GA1.2.874931164.1668093138&semt=ais" alt=""></div>
+           <div class="content">
+            <div class="details">
+                <h2>Neurologists</h2>
+                <div class="data">
+                    <h3>Name<br> <span>Dr.G.Chaitanya</span></h3>
+                    <h3> Days<br> <span>Monday,Thursday</span></h3>
+                    <h3> Time <br><span>9:00am to 2:00pm</span></h3>
+    
+     
+                </div>
+                <div class="ActionBtn">
+                    <div>
+                        <a href="fill_details.html" style="  background: #6db9f0;
+                            padding: 10px 20px;
+                            color:rgb(251, 247, 243);
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            display: inline-block;">Consult Doctor</a>
+                     </div>
+                </div>
+            </div> 
+    
+           </div>
+        </div>
+       <div class="cards" id="card">
+           <div class="imgBox">
+            <img src="https://img.freepik.com/free-photo/medical-doctor-examine-xray-film_554837-564.jpg?size=626&ext=jpg&ga=GA1.1.874931164.1668093138&semt=ais" alt="">
+           </div>
+           <div class="content">
+            <div class="details">
+                <h2>Pulmonologists</h2>
+                <div class="data">
+                    <h3>Name<br> <span>Dr.G.Chaitanya</span></h3>
+                    <h3> Days<br> <span>Monday,Thursday</span></h3>
+                    <h3> Time <br><span>9:00am to 2:00pm</span></h3>
+    
+     
+                </div>
+                <div class="ActionBtn">
+                    <div>
+                        <a href="fill_details.html" style="  background: #6db9f0;
+                           padding: 10px 20px;
+                            color:rgb(251, 247, 243);
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            display: inline-block;">Consult Doctor</a>
+                     </div>
+                </div>
+            </div> 
+    
+           </div>
+        </div>
+        <div class="cards" id="card">
+           <div class="imgBox">
+       <!-- <img src="https://th.bing.com/th/id/R.30f3f9b329945ed389e19ccfe2250fd5?rik=bd6CLlW6Ti7oLw&riu=http%3a%2f%2fwww.villa.ch%2fimg%2fGZyV-iRgosE%2f480%2f20190502-MAMO-Photography-0055-2500px.jpg.jpg&ehk=Bf7Nnuck67moD0FqOOkev8nXP3I5ULnTlvXxjQQQIws%3d&risl=&pid=ImgRaw&r=0" alt=""> -->
+       <img src="https://img.freepik.com/premium-photo/doctors-team-talking-expertise-hospital-with-mri-scans_488220-41399.jpg?size=626&ext=jpg&ga=GA1.1.874931164.1668093138&semt=ais" alt="">
+           </div>
+           <div class="content">
+            <div class="details">
+                <h2>Oncologists</h2>
+                <div class="data">
+                    <h3>Name<br> <span>Dr.G.Chaitanya</span></h3>
+                    <h3> Days<br> <span>Monday,Thursday</span></h3>
+                    <h3> Time <br><span>9:00am to 2:00pm</span></h3>
+     
+                </div>
+                <div class="ActionBtn">
+                    <div>
+                        <a href="fill_details.html" style="  background:  #6db9f0;
+                            padding: 10px 20px;
+                            color:rgb(251, 247, 243);
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            display: inline-block;">Consult Doctor</a>
+                     </div>
+                </div>
+            </div> 
+    
+           </div>
+        </div>
+       
+
+   </section>
+   
+
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </body>
+                
+</body>
+</html>
